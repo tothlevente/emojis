@@ -2,6 +2,7 @@ import { ThemeProvider } from "./components/theme-provider";
 
 import EmojiList from "./components/contents/EmojiList";
 import Header from "./components/contents/Header";
+import Footer from "./components/contents/Footer";
 
 export default function App() {
   return (
@@ -11,6 +12,7 @@ export default function App() {
     >
       <Header />
       <EmojiList />
+      <Footer />
     </ThemeProvider>
   );
 }
