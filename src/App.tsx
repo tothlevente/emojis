@@ -1,5 +1,6 @@
 import { ThemeProvider } from "./components/theme-provider";
 
+import EmojiList from "./components/contents/EmojiList";
 import Header from "./components/contents/Header";
 
 export default function App() {
@@ -9,6 +10,7 @@ export default function App() {
       storageKey="vite-ui-theme"
     >
       <Header />
+      <EmojiList />
     </ThemeProvider>
   );
 }
