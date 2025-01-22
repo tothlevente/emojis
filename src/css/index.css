@@ -120,6 +120,7 @@
     font-size: 2rem;
     margin: 0.5rem;
     padding: 0.5rem;
+    position: relative;
     transition: background-color 0.3s, transform 0.3s;
     cursor: pointer;
   }
@@ -144,6 +145,36 @@
     }
     100% {
       transform: scale(1);
+    }
+  }
+
+  .copy-message {
+    display: none;
+    position: absolute;
+    top: -20px;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: #333;
+    color: white;
+    padding: 0.2rem 0.5rem;
+    border-radius: 4px;
+    font-size: 0.8rem;
+    opacity: 0;
+    transition: opacity 0.3s;
+  }
+
+  li.emoji-item.show-message .copy-message {
+    display: block;
+    opacity: 1;
+    animation: fadeout 4s forwards;
+  }
+
+  @keyframes fadeout {
+    0% {
+      opacity: 1;
+    }
+    100% {
+      opacity: 0;
     }
   }
 }

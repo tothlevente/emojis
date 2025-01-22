@@ -1,9 +1,6 @@
-interface Emoji {
-  name: string;
-  symbol: string;
-}
+import { EmojiProps } from "@/interface/EmojiProps";
 
-const emojis: Emoji[] = [
+const emojis: EmojiProps[] = [
   { name: "grinning face", symbol: "😀" },
   { name: "grinning face with big eyes", symbol: "😃" },
   { name: "grinning face with smiling eyes", symbol: "😄" },

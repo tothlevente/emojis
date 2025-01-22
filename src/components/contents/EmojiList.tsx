@@ -18,6 +18,19 @@ export default function EmojiList() {
       emoji.symbol.includes(searchTerm)
   );
 
+  const handleClick = (
+    symbol: string,
+    event: React.MouseEvent<HTMLLIElement, MouseEvent>
+  ) => {
+    navigator.clipboard.writeText(symbol);
+    const element = event.currentTarget;
+    element.classList.add("show-message");
+
+    setTimeout(() => {
+      element.classList.remove("show-message");
+    }, 4000);
+  };
+
   return (
     <div className="emoji-list">
       <Input
@@ -31,9 +44,10 @@ export default function EmojiList() {
           <li
             key={index}
             className="emoji-item"
-            onClick={() => navigator.clipboard.writeText(emoji.symbol)}
+            onClick={(event) => handleClick(emoji.symbol, event)}
           >
             {emoji.symbol}
+            <span className="copy-message">Copied to clipboard!</span>
           </li>
         ))}
       </ul>
