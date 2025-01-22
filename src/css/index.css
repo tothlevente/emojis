@@ -78,6 +78,20 @@
     line-height: 1.8;
   }
 
+  .wrapper {
+    @media only screen and (min-width: 280px) {
+      display: flex;
+      flex-direction: column;
+      min-height: 100vh;
+    }
+  }
+
+  .container {
+    @media only screen and (min-width: 280px) {
+      flex: 1;
+    }
+  }
+
   .header {
     display: flex;
     justify-content: space-between;
@@ -177,6 +191,10 @@
     100% {
       opacity: 0;
     }
+  }
+
+  .statement-link {
+    color: #38bdf8;
   }
 
   .footer {
