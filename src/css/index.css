@@ -91,4 +91,59 @@
     font-weight: bold;
     font-size: larger;
   }
+
+  .emoji-list {
+    display: grid;
+    justify-items: center;
+  }
+
+  .emoji-list > ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .emoji-list > ul > li {
+    font-size: 2rem;
+    margin: 1rem;
+  }
+
+  .emoji-list > Input {
+    display: grid;
+    width: 90%;
+    margin-left: 5px;
+    margin-right: 5px;
+  }
+
+  li.emoji-item {
+    display: inline-block;
+    font-size: 2rem;
+    margin: 0.5rem;
+    padding: 0.5rem;
+    transition: background-color 0.3s, transform 0.3s;
+    cursor: pointer;
+  }
+
+  li.emoji-item:hover {
+    background-color: #f0f0f0;
+    transform: scale(1.1);
+    border-radius: 8px;
+  }
+
+  li.emoji-item:active {
+    animation: pulse 0.5s;
+    background-color: #d0d0d0;
+  }
+
+  @keyframes pulse {
+    0% {
+      transform: scale(1);
+    }
+    50% {
+      transform: scale(1.2);
+    }
+    100% {
+      transform: scale(1);
+    }
+  }
 }

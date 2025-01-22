@@ -1,3 +1,4 @@
+import { Input } from "../ui/input";
 import { useState } from "react";
 
 interface Emoji {
@@ -50,8 +51,8 @@ export default function EmojiList() {
   );
 
   return (
-    <div>
-      <input
+    <div className="emoji-list">
+      <Input
         type="text"
         placeholder="Search emojis..."
         value={searchTerm}
@@ -61,9 +62,10 @@ export default function EmojiList() {
         {filteredEmojis.map((emoji, index) => (
           <li
             key={index}
-            style={{ fontSize: "2rem", margin: "0.5rem" }}
+            className="emoji-item"
+            onClick={() => navigator.clipboard.writeText(emoji.symbol)}
           >
-            {emoji.symbol} - {emoji.name}
+            {emoji.symbol}
           </li>
         ))}
       </ul>
