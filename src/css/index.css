@@ -101,6 +101,7 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
+    width: 90%;
   }
 
   .emoji-list > ul > li {
@@ -166,7 +167,7 @@
   li.emoji-item.show-message .copy-message {
     display: block;
     opacity: 1;
-    animation: fadeout 4s forwards;
+    animation: fadeout 3s forwards;
   }
 
   @keyframes fadeout {
