@@ -107,8 +107,11 @@
   }
 
   .emoji-list {
-    display: grid;
-    justify-items: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column; /* or row, depending on your layout */
+    height: 100%; /* Adjust as needed */
   }
 
   .emoji-list > ul {
