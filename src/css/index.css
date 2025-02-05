@@ -87,6 +87,8 @@
   }
 
   .container {
+    max-width: fit-content !important;
+
     @media only screen and (min-width: 280px) {
       flex: 1;
     }
@@ -107,18 +109,18 @@
   }
 
   .emoji-list {
-    display: flex;
+    display: grid;
+    align-content: center;
     justify-content: center;
     align-items: center;
-    flex-direction: column; /* or row, depending on your layout */
-    height: 100%; /* Adjust as needed */
+    justify-items: center;
+    text-align: center;
   }
 
   .emoji-list > ul {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    width: 90%;
   }
 
   .emoji-list > ul > li {
@@ -129,8 +131,6 @@
   .emoji-list > Input {
     display: grid;
     width: 90%;
-    margin-left: 5px;
-    margin-right: 5px;
   }
 
   li.emoji-item {
