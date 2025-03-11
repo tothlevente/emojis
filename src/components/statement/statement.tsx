@@ -8,9 +8,9 @@ import {
 } from "@/components/ui/dialog";
 
 import { useEffect, useState } from "react";
-import { Button } from "./ui/button";
+import { Button } from "../ui/button";
 
-import packageJson from "../../package.json";
+import packageJson from "../../../package.json";
 
 export default function Statement() {
   const [open, setOpen] = useState(false);

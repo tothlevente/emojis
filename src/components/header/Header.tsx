@@ -1,4 +1,4 @@
-import { ModeToggle } from "../mode-toggle";
+import { ModeToggle } from "../themes/mode-toggle";
 import { SmileIcon } from "lucide-react";
 
 export default function Header() {

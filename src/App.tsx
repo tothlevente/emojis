@@ -1,9 +1,9 @@
-import { ThemeProvider } from "./components/theme-provider";
+import { ThemeProvider } from "./components/themes/theme-provider";
 
-import EmojiList from "./components/layouts/EmojiList";
-import Header from "./components/layouts/Header";
-import Footer from "./components/layouts/Footer";
-import Statement from "./components/statement";
+import Statement from "./components/statement/statement";
+import EmojiList from "./components/list/EmojiList";
+import Header from "./components/header/Header";
+import Footer from "./components/footer/Footer";
 
 export default function App() {
   return (
