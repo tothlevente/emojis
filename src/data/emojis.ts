@@ -1,5 +1,12 @@
 import { EmojiProps } from "@/interface/EmojiProps";
 
+/**
+ * An array of emoji objects, each containing a name and a symbol.
+ *
+ * @type {EmojiProps[]}
+ * @property {string} name - The name of the emoji.
+ * @property {string} symbol - The symbol representing the emoji.
+ */
 const emojis: EmojiProps[] = [
   { name: "grinning face", symbol: "😀" },
   { name: "grinning face with big eyes", symbol: "😃" },
